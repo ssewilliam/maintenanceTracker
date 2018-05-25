@@ -26,7 +26,8 @@ input{
     font-weight: bold;
         width: 100%;
 }
-input[type='text'],input[type='password']{
+input.form-control,input[type='text'],
+input[type='password'] {
     width: 100%;
     border: 1px solid #666;
     border-radius: 3px;
@@ -65,15 +66,20 @@ img{
     border: 2px solid #49B4FA;
     border-radius:50%
 }
-.not-a-member{
+.not-a-member,
+.already-a-member {
     display: block;
     padding:10px;
     text-align:center;
     font-weight: bold;
 }
-.not-a-member a{
+.not-a-member a,
+.already-a-member a {
     color: #f9f9f9
 }
-.not-a-member a:hover,.not-a-member a:focus{
+.not-a-member a:hover,
+.not-a-member a:focus,
+.already-a-member a:hover,
+.already-a-member a:focus {
     color:#000;
 }

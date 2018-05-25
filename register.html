@@ -5,41 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login | Maintenance Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration | Maintenance Tracker</title>
 </head>
 
 <body>
-    <h1>Maintenance Tracker</h1>
-    <span>Register</span>
-    <form action="index.html" method="post">
-        <div class="form_group">
-            <label for="username">username: </label>
-            <input type="text" name="username" id="username" value="" placeholder="username">
+    <div class="login_register_wrap">
+        <div class="login_register_top">
+            <div class="login_register_logo">
+                <img src="images/mt-logo.jpg" alt="maintenace tracker">
+            </div>
         </div>
-        
-        <div class="form_group">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" placeholder="email">
-        </div>
-        
-        <div class="form_group">
-            <label for="phone">phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="phone">
-        </div>
-        
-        <div class="form_group">
-            <label for="password">password</label>
-            <input type="password" name="password" id="password" placeholder="password">
-        </div>
+        <form action="index.html" method="post">
+            <div class="form_group">
+                <label for="username"></label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="username">
+            </div>
+            
+            <div class="form_group">
+                <label for="email"></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+            
+            <div class="form_group">
+                <label for="phone"></label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="0701-234567">
+            </div>
+            
+            <div class="form_group">
+                <label for="password"></label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="password">
+            </div>
 
-        <div class="form_group">
-            <input type="submit" value="Sign Up">
-            <span>
-                Already a member,
-                <a href="login.html">Sign in</a>
-            </span>
-        </div>
-    </form>
+            <div class="form_group">
+                <input type="submit" value="Sign Up">
+                <span class="already-a-member">
+                    Already a member,
+                    <a href="login.html">Sign in</a>
+                </span>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

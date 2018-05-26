@@ -226,6 +226,9 @@ table tr td.wider{
 .float-right{
     float:right !important;
 }
+.text-center{
+    text-align: center
+}
 /* General Page content End */
 
 /* Create request Page */

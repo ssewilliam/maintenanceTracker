@@ -5,27 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/width.css">
     <title>Login | Maintenance Tracker</title>
 </head>
 
 <body>
-    <h1>Maintenance Tracker</h1>
-    <span>New Request</span>
-    <form action="index.html" method="post">
-        <div class="form_group">
-            <label for="title">title: </label>
-            <input type="text" name="title" id="title" value="" placeholder="Title of the request">
+    <div class="header">
+        <div class="content_wrapper">
+            <div class="row">
+                <div class="large-10">
+                    <div class="mta_logo">
+                        <img src="images/mt-logo.jpg" alt="maintenace tracker">
+                    </div>
+                    <div class="nav_bar">
+                        <ul class="nav_lists">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">Requests</a>
+                                <ul class="">
+                                    <li>
+                                        <a href="#">New Request</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+<div class="content_wrapper">
+    <div class="bgwrap large-10">
+        <h3 class="title">New Request</h3>
+        <div class="row requests">
+        <form class="form new_request" action="index.html" method="post">
+            <div class="form_group">
+                <label for="title"></label>
+                <input type="text" name="title" id="title" value="" placeholder="Title of the request">
+            </div>
 
-        <div class="form_group">
-            <label for="description">Description</label>
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Brief description"></textarea>
-        </div>
-        
-        <div class="form_group">
-            <input type="submit" value="create request">
-        </div>
-    </form>
+            <div class="form_group">
+                <label for="description"></label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Brief description"></textarea>
+            </div>
+            
+            <div class="form_group">
+                <input type="submit" value="create request">
+            </div>
+        </form>
+    </div>    
+</div>    
 </body>
 
 </html>

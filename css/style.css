@@ -19,12 +19,12 @@ form{
     padding:10px;
     width:400px;
 }
-input{
+input,textarea{
     height: 40px;
     padding: 6px 12px;
     font-size: 15px;
     font-weight: bold;
-        width: 100%;
+    width: 100%;
 }
 input.form-control,input[type='text'],
 input[type='password'] {
@@ -48,6 +48,10 @@ input[type='submit']{
 img{
     width:100%;
     height:auto
+}
+textarea{
+    height:auto;
+    font-weight: 400
 }
 /* Login Registration starts */
 .form_group{
@@ -211,3 +215,9 @@ table tr td.wider{
     padding: 10px 0 0;
 }
 /* General Page content End */
+
+/* Create request Page */
+form.new_request {
+    width:100%;
+}
+/* Create request Page */

@@ -210,9 +210,21 @@ table tr td:first-child {
 table tr td.wider{
     padding-right:30px;
 }
-.title{
-    color: #fff;
+.heading,.title{
+    color: #d8d8d8;
     padding: 10px 0 0;
+}
+.heading{
+    font-size: 24px;
+}
+.request_content{
+    color: #7da59e;
+}
+.float-left{
+    float:left !important;
+}
+.float-right{
+    float:right !important;
 }
 /* General Page content End */
 
@@ -221,3 +233,60 @@ form.new_request {
     width:100%;
 }
 /* Create request Page */
+/* view request Page */
+dl {
+    margin-bottom: 20px;
+    color: #7da59e;
+}
+
+dl dt,
+dl dd {
+    padding: 3px 8px;
+}
+
+dl dt {
+    float: left;
+    text-align: right;
+    width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 3px 0;
+    font-weight: 700;
+    color: #a6d4cd;
+}
+
+dl dd {
+    margin-left: 170px;
+    /* float: left */
+}
+.reaction_list{
+    padding: 15px;
+}
+.reaction_list a{
+    float:left;
+    margin-right:10px
+}
+.reaction_list a .user-img{
+    max-width:60px;
+    max-height:60px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.reaction_body{
+    overflow: hidden
+}
+.reaction_body span,
+.reaction_body small:last-child{
+    display: block;
+}
+.reaction_body small:first-child{
+    float: right;
+}
+.reaction{
+    background-color: #000D11;
+    margin:5px 0;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+/* view request Page */

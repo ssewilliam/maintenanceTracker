@@ -13,6 +13,7 @@ body{
 }
 a{
     text-decoration: none;
+    display: block;
 }
 form{
     border-radius: 3px;
@@ -192,10 +193,12 @@ table tr:first-child{
 }
 table td{
     padding:6px 12px;
-    color:#7da59e;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis
+}
+table td,table td a{
+        color:#7da59e;
 }
 table tr:hover{
     background: #0D1727;
@@ -292,4 +295,45 @@ dl dd {
     padding: 6px 12px;
     border-radius: 3px;
 }
+.btn{
+    width: auto;
+    display: inline-block;
+    border:none;
+}
+.btn-success{
+    background: #49B4FA
+}
+.btn-primary{
+    background: #014b4e
+}
 /* view request Page */
+
+/* Mobile view css */
+@media (max-width:768px){
+    body{
+        background-size: cover;
+    }
+    .header .mta_logo{
+        float:none;
+        margin:auto;
+    }
+    .header .nav_bar{
+        margin:0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .header .nav_bar .nav_lists li{
+        padding:6px 16px;
+    }
+    table td{
+        white-space: normal;
+    }
+    table td.wider{
+        display: none;
+    }
+    table td:nth-child(4),
+    table td:nth-child(5) {
+        display: none
+    }
+}
+/* Mobile view css */

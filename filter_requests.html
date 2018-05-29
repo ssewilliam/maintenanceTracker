@@ -45,23 +45,8 @@
     </div>
     <div class="content_wrapper">
         <div class="bgwrap large-10">
-            <h3 class="title">New Request</h3>
+            <h3 class="title">Filter Request</h3>
             <div class="row requests">
-                <form class="form new_request" action="index.html" method="post">
-                    <div class="form_group">
-                        <label for="title"></label>
-                        <input type="text" name="title" id="title" value="" placeholder="Title of the request">
-                    </div>
-
-                    <div class="form_group">
-                        <label for="description"></label>
-                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Brief description"></textarea>
-                    </div>
-
-                    <div class="form_group">
-                        <input type="submit" value="create request">
-                    </div>
-                </form>
                 <form class="form new_request" action="" method="get">
                     <div class="form_group">
                         <select name="" id="" class="form-control">
@@ -73,6 +58,56 @@
                     </div>
                     <input type="button" style="width:auto" class="form-control" value="Filter requests">
                 </form>
+            </div>
+            <div class=" request_content">
+                <h4 class="title">Request Results</h4>
+            </div>
+            <div class="requests request_content">
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r rejected">D</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r approved">A</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r rejected">D</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 </body>

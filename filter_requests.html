@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/width.css">
+    <title>New Request | Maintenance Tracker</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="content_wrapper">
+            <div class="row">
+                <div class="large-10">
+                    <div class="mta_logo">
+                        <img src="images/mt-logo.jpg" alt="maintenace tracker">
+                    </div>
+                    <div class="nav_bar">
+                        <ul class="nav_lists">
+                            <li>
+                                <a href="requests.html">Home</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">Requests</a>
+                                <ul class="">
+                                    <li>
+                                        <a href="create_request.html">New Request</a>
+                                    </li>
+                                    <li>
+                                        <a href="filter_requests.html">Filter Request</a>
+                                    </li>                                    
+                                    <li>
+                                        <a href="requests.html">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="login.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_wrapper">
+        <div class="bgwrap large-10">
+            <h3 class="title">Filter Request</h3>
+            <div class="row requests">
+                <form class="form new_request" action="" method="get">
+                    <div class="form_group">
+                        <select name="" id="" class="form-control">
+                            <option value="">----- Choose a request ------</option>
+                            <option value="resolved">Resolved Requests</option>
+                            <option value="approved">Approved Requests</option>
+                            <option value="rejected">Rejected Requests</option>
+                        </select>
+                    </div>
+                    <input type="button" style="width:auto" class="form-control" value="Filter requests">
+                </form>
+            </div>
+            <div class=" request_content">
+                <h4 class="title">Request Results</h4>
+            </div>
+            <div class="requests request_content">
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r rejected">D</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r approved">A</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <span class="_r rejected">D</span>
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a request that has been submitted by the user
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+                            <a href="view_request.html">view request</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

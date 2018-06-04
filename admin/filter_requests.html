@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/width.css">
+    <title>Requests | Maintenance Tracker</title>
+</head>
+
+<body>
+    <div class="content_wrapper">
+        <div class="bgwrap admin_nav large-3">
+            <h2>Maintenance Tracker</h2>
+            <div>
+                <img src="../images/mt-logo.jpg" alt="admin username instead of picture">
+            </div> <h3>Admin username</h3>
+            <a href="dashboard.html" class="nav-list">Dashboard</a>
+            <a href="requests.html" class="nav-list" >Requests</a>
+            <a href="filter_requests.html" class="nav-list" >Filter requests</a>
+            <a href="login.html" class="nav-list" >Logout</a>
+        </div>
+        <div class="bgwrap large-9">
+            <form action="" class="new_request">
+                <div class="form_group">
+                    <input type="text" name="" placeholder="search" class="form-control" id="">
+                </div>
+            </form>
+            <div class="reaction_list">
+                <h4>Filter requests by category or type</h4>
+                <form style="width:100%" action="" class="request_content">
+                    <div class="form_group">
+                        <label>Request Category: </label>
+                        <select name="" id="" class="form-control">
+                            <option value="">----- Choose a request category ------</option>
+                            <option value="resolved">Resolved Requests</option>
+                            <option value="approved">Approved Requests</option>
+                            <option value="rejected">Rejected Requests</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="request_type">Request type:</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">----- Choose a request type ------</option>
+                            <option value="repair">Repair Requests</option>
+                            <option value="maintenance">Maintenance Requests</option>
+                        </select>
+                    </div>
+
+                    <div class="form_group">
+                        <input type="submit" class="btn " value="Filter Requests" >
+                    </div>
+
+                </form>
+            </div>
+            <div class=" request_content">
+                <h4 class="title">Request Results</h4>
+            </div>
+            <div class="requests request_content">
+                <div class="reaction_list">
+                    <a href="#">
+                        <img class="user-img" src="../images/mt-logo.jpg" alt="">
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a rejected request
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                                <span>Rejected</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <img class="user-img" src="../images/mt-logo.jpg" alt="">
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of anew request.This is an example of anew request
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+
+                            <form class="form new_request" action="">
+                                <div class="form_group">
+                                    <input type="button" class="btn btn-success" value="Approve">
+                                    <input type="button" class="btn btn-primary" value="Diapprove">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <img class="user-img" src="../images/mt-logo.jpg" alt="">
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is an example of a resolved request.This is an example of a resolved request.
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                                <span>Resolved</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reaction_list">
+                    <a href="#">
+                        <img class="user-img" src="../images/mt-logo.jpg" alt="">
+                    </a>
+                    <div class="reaction_body">
+                        <div style="padding:10px;line-height: 1.58">
+                            <span>
+                                This is another example of a new request.This is another example of a new request.
+                                <small class="float-right">5 hr ago</small>
+                                <small>Today at:3:56 am - 28.05.2018</small>
+                            </span>
+
+                            <form class="form new_request" action="">
+                                <div class="form_group">
+                                    <input type="button" class="btn btn-success" value="Approve">
+                                    <input type="button" class="btn btn-primary" value="Diapprove">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

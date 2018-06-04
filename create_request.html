@@ -21,13 +21,16 @@
                     <div class="nav_bar">
                         <ul class="nav_lists">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="requests.html">Home</a>
                             </li>
                             <li class="submenu">
                                 <a href="#">Requests</a>
                                 <ul class="">
                                     <li>
-                                        <a href="create_request.html">New Request</a>
+                                        <a href="#">New Request</a>
+                                    </li>
+                                    <li>
+                                        <a href="filter_requests.html">Filter Request</a>
                                     </li>
                                     <li>
                                         <a href="requests.html">View all</a>
@@ -47,7 +50,7 @@
     <div class="bgwrap large-10">
         <h3 class="title">New Request</h3>
         <div class="row requests">
-        <form class="form new_request" action="index.html" method="post">
+        <form class="form new_request" action="create_request.html" method="post">
             <div class="form_group">
                 <label for="title"></label>
                 <input type="text" name="title" id="title" value="" placeholder="Title of the request">
@@ -63,13 +66,13 @@
                 <label for="description"></label>
                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Brief description"></textarea>
             </div>
-            
+
             <div class="form_group">
                 <input type="submit" value="create request">
             </div>
         </form>
-    </div>    
-</div>    
+    </div>
+</div>
 </body>
 
 </html>
